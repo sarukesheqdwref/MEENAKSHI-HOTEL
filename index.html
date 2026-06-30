@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HOTEL MEENAKSHI | Authentic South Indian Veg Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#faf7f2;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 25px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#8B0000;
+}
+
+.logo span{
+color:#D4AF37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#8B0000;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:750px;
+margin:auto;
+margin-bottom:35px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#D4AF37;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#8B0000;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+color:#8B0000;
+margin-bottom:50px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about h3{
+font-size:30px;
+margin-bottom:20px;
+color:#8B0000;
+}
+
+.about p{
+line-height:1.9;
+font-size:17px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card h4{
+font-size:23px;
+color:#8B0000;
+margin-bottom:10px;
+}
+
+.price{
+color:#D4AF37;
+font-weight:700;
+font-size:18px;
+margin-top:10px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.feature{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.feature h3{
+margin:20px 0;
+color:#8B0000;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.contact-box{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact-box h3{
+color:#8B0000;
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+}
+
+footer{
+background:#8B0000;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">HOTEL <span>MEENAKSHI</span></div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#menu">Menu</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Authentic South Indian Vegetarian Delights</h1>
+
+<p>
+Experience the rich flavors of traditional Tamil cuisine just a few minutes from the famous Meenakshi Amman Temple. Freshly prepared meals served with warmth, tradition, and love.
+</p>
+
+<a href="#menu" class="btn">Explore Menu</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h3>Traditional Taste Since 1995</h3>
+
+<p>
+
+Hotel Meenakshi is a cozy vegetarian restaurant offering authentic South Indian meals prepared using fresh ingredients and traditional recipes.
+
+Located near the sacred Meenakshi Amman Temple, our restaurant welcomes pilgrims, families, tourists, and food lovers with delicious breakfast, lunch, dinner, sweets, snacks, and filter coffee.
+
+Every meal is served with traditional hospitality that reflects the culture of Madurai.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Popular Dishes</h2>
+
+<div class="menu">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h4>Mini Tiffin</h4>
+
+<p>Idli, Vada, Pongal, Dosa, Kesari & Filter Coffee.</p>
+
+<div class="price">₹180</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h4>South Indian Meals</h4>
+
+<p>Unlimited Veg Meals served on Banana Leaf.</p>
+
+<div class="price">₹220</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h4>Masala Dosa</h4>
+
+<p>Crispy golden dosa with potato masala & chutneys.</p>
+
+<div class="price">₹95</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h4>Filter Coffee</h4>
+
+<p>Authentic Madurai style strong filter coffee.</p>
+
+<div class="price">₹35</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Why Choose Us</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<h3>🍃 Pure Vegetarian</h3>
+
+<p>Fresh ingredients prepared daily with authentic recipes.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🍽 Hygienic Kitchen</h3>
+
+<p>Clean, safe and quality food with traditional cooking.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🏛 Temple Nearby</h3>
+
+<p>Conveniently located near Meenakshi Amman Temple.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>☕ Signature Coffee</h3>
+
+<p>Fresh South Indian Filter Coffee loved by visitors.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Visit Us</h2>
+
+<div class="contact">
+
+<div class="contact-box">
+
+<h3>Hotel Information</h3>
+
+<p><strong>📍 Address:</strong><br>
+Near Meenakshi Amman Temple,<br>
+Madurai, Tamil Nadu
+</p>
+
+<p><strong>📞 Phone:</strong><br>
++91 98765 43210</p>
+
+<p><strong>🕘 Timings:</strong><br>
+6:00 AM – 10:30 PM</p>
+
+<p><strong>🍛 Special:</strong><br>
+Traditional Banana Leaf Meals, Breakfast & Filter Coffee</p>
+
+</div>
+
+<div>
+
+<iframe
+src="https://maps.google.com/maps?q=Meenakshi%20Temple%20Madurai&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>HOTEL MEENAKSHI</h3>
+
+<p>Authentic South Indian Vegetarian Restaurant • Madurai</p>
+
+<p>© 2026 Hotel Meenakshi. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
